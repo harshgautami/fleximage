@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery with Flex</title>
+  <style>
+    body{
+        background: #f0f0f0;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;         
+      justify-content: center; 
+      gap: 15px;               
+      margin: 20px;
+    }
+    .gallery img {
+      width: 250px;
+      height: 180px;
+      object-fit: cover;       
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">Photo Gallery with Flex</h2>
+  
+  <div class="gallery">
+    <img src="f1r.jpg" alt="Image 1">
+    <img src="2025-Formula1-Ferrari-SF-25-003-1080.jpg" alt="Image 2">
+    <img src="f1m - Copy.jpg" alt="Image 3">
+    <img src="2025-Formula1-Sauber-C45-002-1080.jpg" alt="Image 4">
+    <img src="2025-Formula1-Williams-FW47-002-1080.jpg" alt="Image 5">
+    <img src="2025-Formula1-Red-Bull-Racing-RB21-010-1080.jpg" alt="Image 6">
+  </div>
+</body>
+</html>
